@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     var settingTableView: UITableView = UITableView(frame: .zero)
     var listOfSetting: [String] = ["Support", "About", "Version"]
+    var headerTitle: String = "dely2p"
+    var heightOfCell: CGFloat = 80
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +55,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return heightOfCell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return headerTitle
     }
 }
