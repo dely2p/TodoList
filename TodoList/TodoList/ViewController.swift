@@ -13,9 +13,7 @@ import Then
 class ViewController: UIViewController {
 
     var settingTableView: UITableView = UITableView(frame: .zero)
-    var listOfSetting: [String] = ["Support", "About", "Version"]
-    var headerTitle: String = "dely2p"
-    var heightOfCell: CGFloat = 80
+    var settingViewModel: SettingViewModel = SettingViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +43,21 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.listOfSetting.count
+        self.settingViewModel.countOfList()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = settingTableView.dequeueReusableCell(withIdentifier: SettingTableViewCell.cellIdentifier) as? SettingTableViewCell else { return UITableViewCell() }
-        cell.bind(listOfSetting[indexPath.row])
+        let title = settingViewModel.info(indexPath.row)
+        cell.bind(title)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return heightOfCell
+        return settingViewModel.heightOfCell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return headerTitle
+        return settingViewModel.headerTitle
     }
 }
