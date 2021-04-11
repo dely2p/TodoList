@@ -14,6 +14,12 @@ struct Todo: Codable, Equatable {
     var isToday: Bool
     
     mutating func update(isDone: Bool, detail: String, isToday: Bool) {
-        
+        self.isDone = isDone
+        self.detail = detail
+        self.isToday = isToday
+    }
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id
     }
 }
