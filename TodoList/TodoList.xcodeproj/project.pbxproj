@@ -16,6 +16,7 @@
 		A320C74C2619EBB80025C6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A320C74A2619EBB80025C6C1 /* LaunchScreen.storyboard */; };
 		A320C7572619EBB80025C6C1 /* TodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320C7562619EBB80025C6C1 /* TodoListTests.swift */; };
 		A320C7622619EBB80025C6C1 /* TodoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320C7612619EBB80025C6C1 /* TodoListUITests.swift */; };
+		A37E409926286A9700AC4E70 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E409826286A9700AC4E70 /* Storage.swift */; };
 		A38A5611261F4EAA005D7D05 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A5610261F4EAA005D7D05 /* SettingTableViewCell.swift */; };
 		A38A5616261F5F3E005D7D05 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A5615261F5F3E005D7D05 /* SettingViewModel.swift */; };
 		A399F01E2623108900F38E52 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399F01D2623108900F38E52 /* TodoListViewController.swift */; };
@@ -63,6 +64,7 @@
 		A320C75D2619EBB80025C6C1 /* TodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A320C7612619EBB80025C6C1 /* TodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListUITests.swift; sourceTree = "<group>"; };
 		A320C7632619EBB80025C6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37E409826286A9700AC4E70 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		A38A5610261F4EAA005D7D05 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		A38A5615261F5F3E005D7D05 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		A399F01D2623108900F38E52 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				A320C74A2619EBB80025C6C1 /* LaunchScreen.storyboard */,
 				A320C74D2619EBB80025C6C1 /* Info.plist */,
 				A399F030262716BD00F38E52 /* TodoManager.swift */,
+				A37E409826286A9700AC4E70 /* Storage.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				A38A5611261F4EAA005D7D05 /* SettingTableViewCell.swift in Sources */,
 				A399F031262716BD00F38E52 /* TodoManager.swift in Sources */,
 				A320C7422619EBB50025C6C1 /* SceneDelegate.swift in Sources */,
+				A37E409926286A9700AC4E70 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
